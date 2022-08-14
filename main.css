@@ -34,9 +34,13 @@ body{
   display: flex;
 }
 .header-inner2 a{
-  border: 1px solid rgb(66, 61, 61);
   padding: 3px 9px;
+  transition: all .5s ease;
+}
+.header-inner2 a:hover{
   border-radius: 3px;
+  border: 1px solid rgb(50, 49, 58);
+  background-color: transparent;
 }
 .main-body{
   width: 75%;
@@ -63,7 +67,7 @@ h1{
 p{
   font-size: 1.1em;
   color: rgb(34, 33, 33);
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 .learn{
   font-size: 0.9em;
@@ -75,7 +79,7 @@ p{
   border-radius: 4px;
 }
  .main-img{
-   width: 100%;
+   width: 500px;
    /* border: 1px solid black; */
  }
  .img{
@@ -83,3 +87,19 @@ p{
    height: 76vh;
    object-fit: contain;
  }
+
+ /* Dropdown Button */
+.dropdown{
+  position: relative;
+}
+.dropdown-content{
+  position: absolute;
+  top: calc(100% + .5rem);
+  background-color: #fff;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+}
+.dropdown > link:focus + .dropdown-content{
+  opacity: 1;
+}

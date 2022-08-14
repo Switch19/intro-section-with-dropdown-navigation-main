@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -19,10 +20,21 @@
   <div class="main-head">
 
     <div class="header">
-      <img src="/images/logo.svg" alt="snap-logo">
+      <img src="./images/logo.svg" alt="snap-logo">
       <ul class="header-inner">
-        <li>Features <img src="/images/icon-arrow-down.svg" alt=""></li>
-        <li>Company <img src="/images/icon-arrow-down.svg" alt=""></li>
+        <div class="dropdown">
+          <li><a href="">Features <img src="./images/icon-arrow-down.svg" alt=""></a>
+                <div class="dropdown-content">
+                  <a href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a>
+                  <a href="#"><img src="./images/icon-calendar.svg" alt=""> Calendar</a>
+                  <a href="#"><img src="./images/icon-reminders.svg" alt=""> Reminders</a>
+                  <a href="#"><img src="./images/icon-planning.svg" alt=""> Planning</a>
+                </div>
+          </li>
+        </div>
+
+        <li><a href="">Company <img src="./images/icon-arrow-down.svg" alt=""></a>
+        </li>
         <li><a href="#">Careers</a></li>
         <li><a href="#">About</a></li>
       </ul>
@@ -43,7 +55,7 @@
         <a href="#" class="learn">Learn more</a>  
     </div>
       <div class="main-img">
-        <img src="/images/image-hero-desktop.png" alt="hero desktop image" class="img">
+        <img src="./images/image-hero-desktop.png" alt="hero desktop image" class="img">
       </div>
   </section>
   
