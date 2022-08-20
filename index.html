@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -16,64 +16,68 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <div class="main-head">
+ <body>
+    <div class="main-head">
+      <div class="header">
+        <img src="./images/logo.svg" alt="snap-logo">
+        <ul class="header-inner">
+            <li class="header-features" [data-dropdown]><a href="#">Features <img src="./images/icon-arrow-down.svg" alt=""></a>
+                  <ul>
+                    <li>
+                      <a href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a>
+                    </li>
+                    <li><a href="#"><img src="./images/icon-calendar.svg" alt=""> Calendar</a>
+                    </li>
+                    <li><a href="#"><img src="./images/icon-reminders.svg" alt=""> Reminders</a>
+                    </li>
+                    <li><a href="#"><img src="./images/icon-planning.svg" alt=""> Planning</a>
+                    </li>
+                  </ul>
+            </li>
 
-    <div class="header">
-      <img src="./images/logo.svg" alt="snap-logo">
-      <ul class="header-inner">
-          <li class="header-features"><a href="#">Features <img src="./images/icon-arrow-down.svg" alt=""></a>
-                <ul>
-                  <li>
-                    <a href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a>
-                  </li>
-                  <li><a href="#"><img src="./images/icon-calendar.svg" alt=""> Calendar</a>
-                  </li>
-                  <li><a href="#"><img src="./images/icon-reminders.svg" alt=""> Reminders</a>
-                  </li>
-                  <li><a href="#"><img src="./images/icon-planning.svg" alt=""> Planning</a>
-                  </li>
-                </ul>
+          <li class="header-features"[data-dropdown]><a href="">Company <img src="./images/icon-arrow-down.svg" alt=""></a>
+            <ul>
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li><a href="#">Our Team</a>
+              </li>
+              <li><a href="#">Blog</a>
+              </li>
+            </ul>
           </li>
-
-        <li class="header-features"><a href="">Company <img src="./images/icon-arrow-down.svg" alt=""></a>
-          <ul>
-            <li>
-              <a href="#">History</a>
-            </li>
-            <li><a href="#">Our Team</a>
-            </li>
-            <li><a href="#">Blog</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </div>
-    <div class="right" ></div>
-      <ul class="header-inner">
-        <li class="header-inner2"><a href="#" >Login</a></li>
-        <li class="header-inner2"><a href="#">Register</a></li>  
-      </ul>
-    </div>
-  </div>
-
-  <section class="main-body">
-    <div class="remote">
-      <h1>Make <br> remote work</h1>
-      <p> Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.</p>
-        <a href="#" class="learn">Learn more</a>  
-    </div>
-      <div class="main-img">
-        <img src="./images/image-hero-desktop.png" alt="hero desktop image" class="img">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
       </div>
-  </section>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Switch Tega</a>.
-  </div>
-</body>
+      <ul class="header-inner">
+       <li class="header-inner2"><a href="#" >Login</a></li>
+       <li class="header-inner2"><a href="#">Register</a></li>  
+      </ul>
+   </div>
+     <section class="main-body">
+        <div class="remote">
+          <h1>Make <br> remote work</h1>
+          <p> Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+            <a href="#" class="learn">Learn more</a>
+            <div class="client">
+              <img src="./images/client-databiz.svg" alt="">
+              <img src="./images/client-audiophile.svg" alt="">
+              <img src="./images/client-meet.svg" alt="">
+              <img src="./images/client-maker.svg" alt="">
+            </div>
+
+        </div>
+        <div class="main-img">
+          <img src="./images/image-hero-desktop.png" alt="hero desktop image" class="img">
+        </div>    
+     </section>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Switch Tega</a>.
+    </div>   
+ </body>
 </html>
