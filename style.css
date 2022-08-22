@@ -1,53 +1,71 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: arial,serif;
 }
-.nav-bar{
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background-color: #11101d;
+}
+.sidebar .logo-details{
+    height: 60px;
+    width: 100%;
     display: flex;
-    width: 90%;
-    margin: 1em auto;
-    /* border: 1px solid black; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
-.nav-bar .menu-bar{
-    display: flex;
-    align-items: center;
-    margin: 0 1em ;
+.sidebar .logo-details .logo_name{
+   font-size: 22px;
+   color: #fff;
+   font-weight: 600;
 }
-.nav-bar li{
-    list-style: none;
-    padding-left: 2em;
-}
-.nav-bar a{
-    text-decoration: none;
-    color: #555;
-}
-.menu{
-    display: flex;
-}
-.end a{
-    padding-right: .8em;
-}
-.sub-menu{
-    display: none;
-}
-.menu-bar li:hover .sub-menu{
-    position: absolute;
-    margin-top: 1.2em;
-    left: 10em;
-    background-color: #fff;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-    text-align: left;
-    opacity: 0;
-}
-.sub-menu ul{
-    margin-left: -25px;
-    padding: 10px;
-}
-.sub-menu ul a{
-    margin-top: 10px;
-    display: inline-block;
-    color: #000;
-}
+.sidebar .nav-links{
+    background: red;
+    height: 100%;
+    padding-top: 30px;
+    padding-left: 70px;
 
+}
+.sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+}
+.sidebar .nav-links li .icon_link{
+    display: flex;
+    align-items: center;
+    line-height: 50px;   
+
+    /* border:  1px solid; */
+}
+.sidebar .nav-links li img{
+    margin-left: 25px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    /* border: 1px solid #fff; */
+    
+}
+.sidebar .nav-links li a{
+    text-decoration: none;
+    display: flex;
+}
+.sidebar .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.sidebar .nav-links li .sub-menu{
+    padding: 12px 14px;
+    margin-top: -10px;
+    display: inline-block;
+}
+.sidebar .nav-links li .sub-menu a{
+    color: #fff;
+    padding: 5px 00;
+}
