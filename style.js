@@ -1,10 +1,10 @@
-const dropDown = document.querySelectorAll('.header-features');
-dropDown.forEach(function(drop){
-    const btn = drop.querySelector('.menu');
-    const imgs = drop.querySelector('.img')
+const mobileDropDown = document.querySelectorAll('.features');
+ mobileDropDown.forEach(function(drop){
+    const btn = drop.querySelector('.menus');
+    const imgs = drop.querySelector('.imgs')
 
     drop.addEventListener('click', function(){
-        dropDown.forEach(function(item){
+        mobileDropDown.forEach(function(item){
             if (item !== drop) {
                 item.classList.remove("show-link")
                 item.classList.remove("rotate")
