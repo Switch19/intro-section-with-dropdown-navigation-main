@@ -1,12 +1,26 @@
-const dropDown = document.querySelector('.header-features')
-const myDrop = document.querySelector('#head')
-const myDropDown = document.querySelectorAll('ul')
-dropDown.addEventListener("click", hideShow)
-function hideShow() {
-    for (let i = 1; i < 3; i++) {
-        myDropDown[i].classList.toggle('dropdown')       
-            
-    }
-    
-}
-console.log(dropDown)
+// const myDropDown = document.querySelectorAll('.menu');
+// const imgs = document.querySelectorAll('.img')
+
+// dropDown.forEach(function(btn){
+//     btn.addEventListener('click', function(e){
+//         console.log(e.currentTarget.lastChild)
+//     })
+// })
+const dropDown = document.querySelectorAll('.header-features');
+dropDown.forEach(function(drop){
+    const btn = drop.querySelector('.menu');
+    const imgs = drop.querySelector('.img')
+
+    drop.addEventListener('click', function(){
+        dropDown.forEach(function(item){
+            if (item !== drop) {
+                item.classList.remove("dropdown")
+                item.classList.remove("rotate")
+            }
+        })
+        btn.classList.toggle("dropdown");
+        imgs.classList.toggle("rotate");
+    })
+    // console.log(imgs);
+})
+
