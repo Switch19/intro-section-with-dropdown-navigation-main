@@ -32,7 +32,7 @@ const mobileDropDown = document.querySelectorAll('.features');
         btn.classList.toggle("show-link");
     })
 })
-// navbar-toggle
+// navbar-toggle and menu Toggle
 const navToggle = document.querySelector('.nav-btn');
 const links = document.querySelector('.side-bar');
 const menuOpen = document.querySelector('.hamburger')
@@ -47,9 +47,6 @@ navToggle.addEventListener('click', function () {
         menuClose.classList.add('close') 
     }
 });
-
-// menu toggle
-// console.log(navButton)
 
 
 
