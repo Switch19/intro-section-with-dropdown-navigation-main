@@ -131,7 +131,17 @@ p{
    max-height: 100%;
    object-fit: contain;
  }
-
+.nav-btn{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.nav-btn .close{
+  display: none;
+}
+.nav-btn .open{
+  display: none;
+}
  @media screen and (min-width:800px) {
    .container-mobile{
     display: none;
@@ -147,7 +157,7 @@ p{
     padding: 0;
 }
 body{
-    background-color: rgb(228, 222, 222);
+    background-color: rgb(255, 255, 255);
 }
 .wrap{
     display: grid;
